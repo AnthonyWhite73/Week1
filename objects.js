@@ -48,17 +48,16 @@ let foodAmount = 0;
 const coffeeShop = {
     branch: "Manchester",
     drinks: [
-        "tea",
-        "coffee"
+        ["Latte", 2],
+        ["Tea", 2],
+        ["Coffee", 2]        
     ],
+    
     food: [
-        "chips",
-        "sandwich"
+        ["chips", 1],
+        ["sandwich", 2]
     ],
-    tea: 5,
-    coffee: 2,
-    chips: 2,
-    sandwich: 3,
+    
     drinksOrdered (){
         drinksAmount ++;
         return `Your order is ${this.branch} is drinks`;
@@ -71,6 +70,7 @@ const coffeeShop = {
 
 console.log(coffeeShop.foodOrdered(coffeeShop.food[1]));
 console.log(coffeeShop.drinksOrdered(coffeeShop.tea));
+//console.log(${this.drinks[i][0]} and drink price with ${this.drinks[i][1]});
 
 // its a bit of a tough one, 
 // the drinks ordered methods might have to have a loop that loops through an array of food on offer, 
