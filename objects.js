@@ -55,7 +55,7 @@ const coffeeShop = {
         "chips",
         "sandwich"
     ],
-    tea: 1,
+    tea: 5,
     coffee: 2,
     chips: 2,
     sandwich: 3,
